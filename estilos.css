@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+ p, a, li, h1, h3{
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+/*Esta es la cabecera*/
+.cabecera{
+    overflow: hidden;
+    background: #dddddd;
+}
+
+.cabecera img{
+    display: block;
+    margin: auto;
+
+}
+
+.cabecera h1{
+    text-align: center;
+    font-size: 28px;
+    color: chocolate;
+}
+
+.cabecera h3{
+    font-size: 25px;
+    text-align: center;
+    color: dodgerblue;
+}
+
+/*AQUI COMIENZA EL MENU*/
+
+.menu{
+    background: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li{
+    list-style: none;
+    display: flexbox;
+    display:inline
+    
+    
+}
+
+.menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px;
+    flex-wrap: wrap;
+    
+}
+
+.menu ul li a:hover{
+    color: chocolate;
+
+}
+
+/*AQUI COMIENZA EL CUERPO*/
+.slider {
+    
+    width: 100%;
+    height: 400px;
+    display: flex;
+    
+    
+}
+
+.iconos{
+    overflow: hidden;
+    margin: 20px 0px;
+    align-items: stretch;
+}
+
+.iconos{
+    text-align: center;
+    color: #444444;
+    font-size: 26px;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.iconos div{
+    width: 24%;
+    float: left;
+    overflow: hidden;
+}
+
+.iconos div img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.iconos div p{
+    text-align: center;
+    color: cornflowerblue;
+}
+
+.bienvenida{
+    margin: 20px 30px ;
+    background: #999;
+    padding: 20px;
+}
+
+.bienvenida{
+    text-align: center;
+    color: chocolate;
+    color: #ffffff;
+}
+
+.parallax{
+    width: 100%;
+    height: 150px;
+    background: url(img/librosapilados.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+.parallax a{
+    display: block;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    background: #000000;
+    color: #ffffff;
+    margin: 50px auto 50px auto;
+    transition: 1s;
+}
+
+.parallax a:hover{
+    background: orange;
+    color: #000000;
+}
+
+.publicidad{
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.publicidad img{
+    width: 100%;
+   
+}
+
+.piedepagina{
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* aplicar un media querie */
+
+/* estilo general para pantallas grandes (pc) */
+
+body{
+    font-size: 16px;
+    padding: 20px;
+}
+
+/* estilo general para pantallas chicas (movil) */
+
+@media(max-width: 768px) {
+    body{
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+
+/* imagenes responsivas */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
