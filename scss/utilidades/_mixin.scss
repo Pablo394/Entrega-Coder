@@ -1,0 +1,15 @@
+@mixin icono {
+    overflow: hidden;
+    margin: 20px 0px;
+    text-align: $centrar-contenido;
+    color: #444444;
+    font-size: $iconos-size;
+}
+
+@mixin animacion-escalado {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}

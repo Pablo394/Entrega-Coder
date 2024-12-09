@@ -1,0 +1,81 @@
+/*ESTILOS SERVICIOS*/
+footer .piedepagina {
+  margin-top: 200px;
+}
+
+/*ESTILO CONTACTOS*/
+.mapa {
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .mapa-container {
+    width: 100%;
+  }
+  .mapa-container .mapa {
+    width: fit-content;
+  }
+}
+/*ESTILOS NOSOTROS*/
+.seccion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.contenedor {
+  border: solid 1px #ccc 255, 255, 255, 0, 2;
+}
+
+.tabla {
+  font-size: 14px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.hilo {
+  background: #ccc;
+}
+
+th {
+  padding: 20px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 15px;
+  border-bottom: solid 1px #ccc;
+}
+
+.cuerpot tr {
+  cursor: pointer;
+}
+
+.cuerpot tr:hover {
+  background: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  body .contenedor {
+    width: fit-content;
+  }
+}
+@media (max-widhth: 600px) {
+  .seccion {
+    width: 100%;
+  }
+  .seccion .contenedor {
+    width: fit-content;
+  }
+}
+body {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=estilos-2.css.map */

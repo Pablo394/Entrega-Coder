@@ -1,0 +1,156 @@
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import './utilidades/variables';
+@import './utilidades/mixin';
+
+/*ESTILOS EN LIBROS*/
+
+body{
+    
+main{
+    @include icono;
+    .flex-container{
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    column-gap: 75px;
+    box-sizing: border-box;
+    padding: 1px;
+
+    .flex-item{
+        display: flex;
+    flex: 0 1 100px;
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin-top: 20px;
+    text-align: center;
+    background: url(../img/tapa-1.jpg) no-repeat center / cover;
+    width: 25px;
+    height: 250px;
+        @include animacion-escalado;
+    
+    }    
+
+    .flex-item1 {
+        display: flex;
+        flex: 0 1 100px;
+        border: 1px solid #ccc;
+        padding: 50px;
+        margin-top: 20px;
+        text-align: center;
+        width: 25px;
+        height: 250px;
+        background: url(../img/tapa-2.jpg) no-repeat center / cover;
+        @include animacion-escalado;
+    }
+
+    .flex-item2{
+        display: flex;
+        flex: 0 1 100px ;
+        border: 1px solid #ccc;
+        width: 250px;
+        height: 250px;
+        padding: 50px;
+        margin-top: 20px;
+        text-align: center;
+        background: url(../img/tapa-3.jpg) no-repeat center / cover;
+        @include animacion-escalado;
+        
+    }
+
+    .flex-item3{
+        display: flex;
+        flex: 0 1 100px;
+        border: 1px solid #ccc;
+        width: 250px;
+        height: 250px;
+        padding: 50px;
+        margin-top: 20px;
+        text-align: center;
+        background: url(../img/tapa-4.jpg) no-repeat center / cover;
+        @include animacion-escalado;
+    } 
+    
+    .flex-item4{
+        display: flex;
+        flex: 0 1 100px;
+        border: 1px solid #ccc;
+        width: 250px;
+        height: 250px;
+        padding: 50px;
+        margin-top: 20px;
+        text-align: center;
+        background: url(../img/tapa-5.jpg) no-repeat center / cover;
+        @include animacion-escalado;
+    }
+    
+    .flex-item5{
+        display: flex;
+        flex: 0 1 100px;
+        width: 25px;
+        height: 250px;
+        border: 1px solid #ccc;
+        padding: 50px;
+        margin-top: 20px ;
+        text-align: center;
+        background: url(../img/tapa-6.jpg) no-repeat center / cover;
+        @include animacion-escalado;
+        
+    
+    }
+    
+    .flex-item6{
+        display: flex;
+        flex: 0 1 100px;
+        width: 250px;
+        height: 250px;
+        border: 1px solid #ccc;
+        padding: 50px;
+        margin-top: 20px;
+        text-align: center;
+        background: url(../img/tapa-7.jpg) no-repeat center / cover;
+        @include animacion-escalado;
+    }
+    
+    .flex-item7{
+        display: flex;
+        flex: 0 1 100px;
+        width: 25px;
+        height: 250px;
+        border: 1px solid #ccc;
+        padding: 50px;
+        margin-top: 20px;
+        text-align: center;
+        background: url(../img/tapa-8.jpg) no-repeat center / cover;
+        @include animacion-escalado;
+    }
+    
+    .flex-item8{
+        display: flex;
+        flex: 0 1 100px;
+        width: 25px;
+        height: 250px;
+        border: 1px solid #ccc;
+        padding: 50px;
+        margin-top: 20px;
+        text-align: center;
+        background: url(../img/tapa-9.jpg) no-repeat center / cover;
+        @include animacion-escalado;
+    }
+    
+    .flex-item9{
+        display: flex;
+        flex: 0 1 100px;
+        width: 25px;
+        height: 250px;
+        border: 1px solid #ccc;
+        padding: 50px;
+        margin-top: 20px;
+        text-align: center;
+        background: url(../img/tapa-10.jpg) no-repeat center / cover;
+        @include animacion-escalado;
+    }
+
+    }
+}
+}

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import './utilidades/variables';
+@import './utilidades/mixin';
+
+/* aplicar un media querie */
+
+/* estilo general para pantallas grandes (pc) */
+body {
+  font-size: $texto-desktop-font-size;
+  padding: 20px;
+
+  p, a, li, h1, h3 {
+    font-family: $font-family;
+  }
+  
+  /* Esta es la cabecera */
+  .cabecera {
+    overflow: hidden;
+    background: $cabecera-color;
+  }
+  
+  .cabecera img {
+    display: block;
+    margin: auto;
+  }
+  
+  .cabecera h1 {
+    text-align: $centrar-contenido;
+    font-size: $titulo-font-size;
+    color: $titulo-color;
+  }
+  
+  .cabecera h3 {
+    font-size: $subtitulo-font-size;
+    text-align: $centrar-contenido;
+    color: $subtitulo-color;
+  }
+  
+  /* AQUI COMIENZA EL MENU */
+  .menu {
+    background: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: $centrar-contenido;
+  }
+  
+  .menu ul li {
+    list-style: none;
+    display: flexbox;
+    display: inline;
+  }
+  
+  .menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px;
+    flex-wrap: wrap;
+  }
+  
+  .menu ul li a:hover {
+    color: chocolate;
+  }
+  
+  /* AQUI COMIENZA EL CUERPO */
+  .slider {
+    width: 100%;
+    height: 400px;
+    display: flex;
+  }
+  
+  .iconos {
+    @include icono;
+
+    & div {
+        width: 24%;
+        float: left;
+        overflow: hidden;
+    
+        & img {
+            width: 80%;
+            display: block;
+            margin: auto;
+            @include animacion-escalado;
+        }
+    
+        & p {
+            text-align: $centrar-contenido;
+            color: cornflowerblue;
+        }
+    }
+  }
+  
+  .bienvenida {
+    margin: 20px 30px;
+    background: $mensaje-background-color;
+    padding: 20px;
+    text-align: $centrar-contenido;
+    color: $mensaje-color;
+  }
+  
+  .parallax {
+    width: 100%;
+    height: 150px;
+    background: url(../img/librosapilados.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  .parallax a {
+    display: block;
+    padding: 10px;
+    width: 150px;
+    text-align: $centrar-contenido;
+    text-decoration: none;
+    background: $contactanos-background-color;
+    color: $contactanos-color;
+    margin: 50px auto 50px auto;
+    transition: 1s;
+  
+    &:hover {
+      background: $contactanos-hover-background-color;
+      color: $contactanos-hover-color;
+    }
+  }
+  
+  .publicidad {
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+    & img {
+      width: 100%;
+    }
+  }
+  
+  .piedepagina {
+    background: #333;
+    color: #ffffff;
+    text-align: $centrar-contenido;
+    padding: 5px;
+    font-size: $texto-mobile-font-size;
+  }
+}
+
+/* estilo general para pantallas chicas (movil) */
+@media(max-width: 768px) {
+  body {
+    font-size: $texto-mobile-font-size;
+    padding: 10px;
+  }
+}
+
+/* imagenes responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+}
