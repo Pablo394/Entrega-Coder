@@ -1,4 +1,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.libro, body main .flex-container .flex-item10, body main .flex-container .flex-item9, body main .flex-container .flex-item8, body main .flex-container .flex-item7, body main .flex-container .flex-item6, body main .flex-container .flex-item5, body main .flex-container .flex-item4, body main .flex-container .flex-item3, body main .flex-container .flex-item2, body main .flex-container .flex-item1 {
+  display: flex;
+  flex: 0 1 100px;
+  border: 1px solid #ccc;
+  padding: 50px;
+  margin-top: 20px;
+  text-align: center;
+  width: 25px;
+  height: 250px;
+  transition: all 0.2s ease-in-out;
+}
+.libro:hover, body main .flex-container .flex-item10:hover, body main .flex-container .flex-item9:hover, body main .flex-container .flex-item8:hover, body main .flex-container .flex-item7:hover, body main .flex-container .flex-item6:hover, body main .flex-container .flex-item5:hover, body main .flex-container .flex-item4:hover, body main .flex-container .flex-item3:hover, body main .flex-container .flex-item2:hover, body main .flex-container .flex-item1:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+  body .contenedor {
+    width: fit-content;
+  }
+  .mapa-container {
+    width: 100%;
+  }
+  .mapa-container .mapa {
+    width: fit-content;
+  }
+}
+@media (max-width: 600px) {
+  .seccion {
+    width: 100%;
+  }
+  .seccion .contenedor {
+    width: fit-content;
+  }
+}
+/*ESTILOS SERVICIOS*/
+footer .piedepagina {
+  margin-top: 200px;
+}
+
+/*ESTILO CONTACTOS*/
+.mapa {
+  border-radius: 16px;
+}
+
+/*ESTILOS NOSOTROS*/
+.seccion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.contenedor {
+  border: solid 1px #ccc 255, 255, 255, 0, 2;
+}
+
+.tabla {
+  font-size: 14px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.hilo {
+  background: #ccc;
+}
+
+th {
+  padding: 20px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 15px;
+  border-bottom: solid 1px #ccc;
+}
+
+.cuerpot tr {
+  cursor: pointer;
+}
+
+.cuerpot tr:hover {
+  background: #f0f0f0;
+}
+
+body {
+  font-size: 16px;
+  padding: 10px;
+}
+
+/*ESTILOS EN LIBROS*/
+body main {
+  overflow: hidden;
+  margin: 20px 0px;
+  text-align: center;
+  color: #444444;
+  font-size: 26px;
+}
+body main .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 75px;
+  box-sizing: border-box;
+  padding: 1px;
+}
+body main .flex-container .flex-item1 {
+  background: url(../img/tapa-1.jpg) no-repeat center/cover;
+}
+body main .flex-container .flex-item2 {
+  background: url(../img/tapa-2.jpg) no-repeat center/cover;
+}
+body main .flex-container .flex-item3 {
+  background: url(../img/tapa-3.jpg) no-repeat center/cover;
+}
+body main .flex-container .flex-item4 {
+  background: url(../img/tapa-4.jpg) no-repeat center/cover;
+}
+body main .flex-container .flex-item5 {
+  background: url(../img/tapa-5.jpg) no-repeat center/cover;
+}
+body main .flex-container .flex-item6 {
+  background: url(../img/tapa-6.jpg) no-repeat center/cover;
+}
+body main .flex-container .flex-item7 {
+  background: url(../img/tapa-7.jpg) no-repeat center/cover;
+}
+body main .flex-container .flex-item8 {
+  background: url(../img/tapa-8.jpg) no-repeat center/cover;
+}
+body main .flex-container .flex-item9 {
+  background: url(../img/tapa-9.jpg) no-repeat center/cover;
+}
+body main .flex-container .flex-item10 {
+  background: url(../img/tapa-10.jpg) no-repeat center/cover;
+}
+
 /* aplicar un media querie */
 /* estilo general para pantallas grandes (pc) */
 body {
@@ -34,6 +177,12 @@ body .menu {
   overflow: hidden;
   display: flex;
   justify-content: center;
+}
+body .menu .navbar-brand {
+  color: #ffffff;
+}
+body .menu .navbar-toggler {
+  background-color: #ffffff;
 }
 body .menu ul li {
   list-style: none;
@@ -73,7 +222,7 @@ body .iconos div img {
   transition: all 0.2s ease-in-out;
 }
 body .iconos div img:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 body .iconos div p {
   text-align: center;
@@ -117,6 +266,7 @@ body .publicidad {
 }
 body .publicidad img {
   width: 100%;
+  height: 100vh;
 }
 body .piedepagina {
   background: #333;
@@ -126,13 +276,6 @@ body .piedepagina {
   font-size: 14px;
 }
 
-/* estilo general para pantallas chicas (movil) */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-    padding: 10px;
-  }
-}
 /* imagenes responsivas */
 img {
   max-width: 100%;

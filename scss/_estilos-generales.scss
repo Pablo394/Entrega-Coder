@@ -15,15 +15,6 @@ footer{
     
 }
 
-@media(max-width: 768px) {
-    .mapa-container{
-        width: 100%;
-        .mapa{
-            width: fit-content;
-        }
-       
-    }
-}
 
 /*ESTILOS NOSOTROS*/
 .seccion{
@@ -68,25 +59,8 @@ td{
     background: #f0f0f0;
 }
 
-@media(max-width: 768px) {
-    body{
-        width: 100%;
-        .contenedor{
-            width: fit-content;
-        }
-       
-    }
-}
 
-@media(max-widhth: 600px) {
-    .seccion{
-        width: 100%;
-        .contenedor{
-            width: fit-content;
-        }
-    }
 
-}
 
 body{
     font-size: 16px;

@@ -1,0 +1,29 @@
+
+
+@media(max-width: 768px) {
+  body{
+      width: 100%;
+      font-size: $texto-mobile-font-size;
+      padding: 10px;
+      .contenedor{
+          width: fit-content;
+      }     
+  }
+
+  .mapa-container{
+    width: 100%;
+    .mapa{
+        width: fit-content;
+    }   
+  }
+}
+
+@media(max-width: 600px) {
+  .seccion{
+      width: 100%;
+      .contenedor{
+          width: fit-content;
+      }
+  }
+
+}

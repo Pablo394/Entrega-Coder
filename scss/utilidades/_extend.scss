@@ -1,0 +1,14 @@
+
+
+
+.libro {
+    display: flex;
+    flex: 0 1 100px;
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin-top: 20px;
+    text-align: center;
+    width: 25px;
+    height: 250px;
+    @include animacion-escalado(1.2);
+}
